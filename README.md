@@ -9,5 +9,5 @@
 This project only mission is to deep in and refresh more of my Laravel Knowledge, using Vite (Laravel 9.1+) instead Webpack Mix (like in my last project), learn some Vue (I'm really new to VUE despite having some vagage on other JS fronts like React), and interconect Back and Front End at once, to work together.
 This one gonna be a practice por my project "[Work-Sync-Activity-Control](https://github.com/Walfg/Work-Sync-Activity-Control/tree/main)", which would be using Laravel and React.
 
-##Status
+## Status
 > Basic: Finished (Crappy Laravel app to test things)
