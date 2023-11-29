@@ -8,8 +8,7 @@
                     <div class="card-header">Resume Details</div>
 
                     <div class="card-body">
-                      <img src="{{ asset('storage/' . $resume->picture) }}" alt="Profile Picture">
-
+                        <img src="{{ asset('storage/' . $resume->picture) }}" alt="Profile Picture">
                         <p class="d-flex justify-content-center">Title: {{ $resume->title }}</p>
                         <p class="d-flex justify-content-center">Name: {{ $resume->name }}</p>
                         <p class="d-flex justify-content-center">Email: <a class="text-info mx-1" href="mailto:{{ $resume->email }}">{{ $resume->email }}</a></p>
