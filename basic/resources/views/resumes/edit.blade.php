@@ -109,6 +109,8 @@
                                     @enderror
                                 </div>
 
+                                <example-component/>
+
 
                             </div>
 
