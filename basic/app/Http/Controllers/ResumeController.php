@@ -90,19 +90,21 @@ class ResumeController extends Controller
                 "website" => "nullable|url",
                 "picture" => "nullable|image",
                 "about" => "nullable|string",
+                "skills" => "nullable|array",
                 "title" => Rule::unique("resumes")
                     ->where(fn ($query) =>
                     $query->where("user_id", $resume->user->id))
                     ->ignore($resume->id)
             ]
         );
-
+        
+        
         if ($request->hasFile('picture')) {
             $picture = $request->file("picture")->store("pictures", "public");
             Image::make(public_path("storage/$picture"))->fit(800, 800)->save();
             $data["picture"] = $picture;
         }
-
+        
         $resume->update($data);
 
         return redirect()->route("resumes.index");

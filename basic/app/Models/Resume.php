@@ -17,6 +17,7 @@ class Resume extends Model
         "website",
         "picture",
         "about",
+        "skills"
     ];
 
     public function user(){

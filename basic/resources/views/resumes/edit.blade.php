@@ -98,7 +98,7 @@
                                 </label>
 
                                 <div class="col-md-6">
-                                    <textarea class="form-control @error('about') is-invalid @enderror" value="{{ old('about') ?? $resume->title }}">
+                                    <textarea class="form-control @error('about') is-invalid @enderror" value="{{ old('about') ?? $resume->about }}">
                                     </textarea>
 
 
@@ -108,10 +108,7 @@
                                         </span>
                                     @enderror
                                 </div>
-
-                                <example-component/>
-
-
+                                <skills :skills="{{ $resume->skills ?? "[]" }}"/>
                             </div>
 
                             <div class="row mb-0">
